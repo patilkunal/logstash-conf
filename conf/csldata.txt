@@ -1,0 +1,30 @@
+ match => { "message" => "%{CSLLOGTIMESTAMP:timestamp} %{LOGLEVEL:loglevel}  \[%{JAVACLASS:javaclassname}\] \(%{DATA}\|R:%{DATA}:requestid\|%{DATA}:clientid\|%{DATA}:clientversion\) %{GREEDYDATA:logtext}" }
+ 
+ 
+ 
+ 
+
+2015-05-11 08:10:20,972 DEBUG [com.cox.oss.cvm.net.HttpClient] (inbound-8080-211|R:YmIONrmrKsjVbmrs|pve|1.5.3) Attempt 1 to execute request
+2015-05-11 08:10:20,984 DEBUG [com.cox.sl.text.LuceneTextEngine] (inbound-8080-52|R:bGLKv7mrhcjVFGrs|trio|2.X) Executing Lucene Query: +(+(vodServer:206)) +strippedTitle:youn*
+2015-05-11 08:10:21,000 INFO  [com.cox.sl.tvmetadata.web.handler.NewTitleSearchHandler] (inbound-8080-52|R:bGLKv7mrhcjVFGrs|trio|2.X) TitleSearch|CLIENTADDRESS:98.173.244.250|exclude_skipped:1|showing_types:2|title:youn|index:0|duration:20160|max:7|macaddress:68:ee:96:71:88:98|start_time:1431331819814|user_id:7310147|start time:Mon, 11 May 2015 08:10:19 +0000 (GMT)|end time:Mon, 25 May 2015 08:10:19 +0000 (GMT)|search took (ms): 41|search found: com.cox.sl.tvmetadata.SearchResults@2cf0c999
+2015-05-11 08:10:21,000 DEBUG [com.cox.sl.tvmetadata.web.handler.NewTitleSearchHandler] (inbound-8080-52|R:bGLKv7mrhcjVFGrs|trio|2.X) TitleSearch|Output:outputstream|size (bytes):518
+2015-05-11 08:10:21,072 DEBUG [com.cox.oss.cvm.net.HCRespLogInterceptor] (inbound-8080-211|R:YmIONrmrKsjVbmrs|pve|1.5.3) Receiving the following HTTP response (478ms from http://dukecvsearch00.tc.at.cox.net:9200
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Content-Length: 635526
+2015-05-11 08:10:21,072 DEBUG [com.cox.oss.cvm.net.HttpClient] (inbound-8080-211|R:YmIONrmrKsjVbmrs|pve|1.5.3) Connection can be kept alive indefinitely
+2015-05-11 08:10:21,077 DEBUG [com.cox.sl.searchengine.configuration.PoolingClientConnectionManagerExt] (inbound-8080-211|R:YmIONrmrKsjVbmrs|pve|1.5.3) Connection released: [id: 1577045][route: {}->http://dukecvsearch00.tc.at.cox.net:9200][total kept alive: 0; route allocated: 0 of 256; total allocated: 0 of 256]
+
+2015-05-10 08:25:36,434 DEBUG [com.cox.oss.cvm.util.ThreadPool] (ThreadPool-SetPropertyHandler-3) Completed execution of job on SetPropertyHandler in 0ms: com.cox.sl.profile.http.handler.SetPropertyHandlerJob@30d9b15b
+2015-05-10 08:25:36,802 DEBUG [com.cox.oss.cvm.util.ThreadPool] (ThreadPool-SetPropertyHandler-3) Starting execution of job on SetPropertyHandler: com.cox.sl.profile.http.handler.SetPropertyHandlerJob@482786f8
+2015-05-10 08:25:36,802 DEBUG [com.cox.oss.cvm.util.ThreadPool] (ThreadPool-SetPropertyHandler-3) Completed execution of job on SetPropertyHandler in 0ms: com.cox.sl.profile.http.handler.SetPropertyHandlerJob@482786f8
+2015-05-10 08:25:36,863 DEBUG [com.cox.oss.cvm.util.ThreadPool] (ThreadPool-SetPropertyHandler-3) Starting execution of job on SetPropertyHandler: com.cox.sl.profile.http.handler.SetPropertyHandlerJob@11788273
+2015-05-10 08:25:36,863 DEBUG [com.cox.oss.cvm.util.ThreadPool] (ThreadPool-SetPropertyHandler-3) Completed execution of job on SetPropertyHandler in 0ms: com.cox.sl.profile.http.handler.SetPropertyHandlerJob@11788273
+2015-05-10 08:25:37,116 DEBUG [com.cox.oss.cvm.util.ThreadPool] (ThreadPool-SetPropertyHandler-3) Starting execution of job on SetPropertyHandler: com.cox.sl.profile.http.handler.SetPropertyHandlerJob@76724cd8
+2015-05-10 08:25:37,116 DEBUG [com.cox.oss.cvm.util.ThreadPool] (ThreadPool-SetPropertyHandler-3) Completed execution of job on SetPropertyHandler in 0ms: com.cox.sl.profile.http.handler.SetPropertyHandlerJob@76724cd8
+ 
+ 
+2015-05-10 13:35:18,023 DEBUG [com.cox.oss.cvm.util.EntitlementLoaderTask] (EntitlementCatalog) Executing query to pull ICOMS entitlement defaults: select pv.site_id,pv.company_division_id,pv.property_value from properties p, property_values pv where p.id=pv.property_id and pv.scope=6 and pv.site_id is not null and p.name='/cox/entitlement/guide/enabled 
+
+
+2015-05-10 13:35:18,708 DEBUG [com.cox.sl.profile.data.GetCustomerProfileDAO] (inbound-8080-218) Executing stored proc: begin ? := DVRSCHEDAPI.getdvruserprofile(?,?); end; ... 1=27326103, 2=477
